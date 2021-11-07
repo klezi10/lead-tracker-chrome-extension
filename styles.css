@@ -8,3 +8,17 @@ input {
 #save-input-btn {
   padding: 10px 15px;
 }
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-top: 5px;
+}
+
+li a {
+  color: #0dcaf0;
+}
