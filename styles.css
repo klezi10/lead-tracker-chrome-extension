@@ -1,3 +1,7 @@
+body {
+  min-width: 400px;
+}
+
 input {
   border: 1px solid #0dcaf0;
   border-radius: 4px;
@@ -7,6 +11,7 @@ input {
 
 #save-input-btn {
   padding: 10px 15px;
+  font-weight: bold;
 }
 
 ul {
