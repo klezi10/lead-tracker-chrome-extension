@@ -6,6 +6,12 @@ const ulEl = document.getElementById('ul-el');
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem('leads'));
 console.log(leadsFromLocalStorage);
 
+//to show leads after refresh
+if (leadsFromLocalStorage) {
+  leads = leadsFromLocalStorage;
+  renderLeads();
+}
+
 inputBtn.addEventListener('click', function () {
   leads.push(inputEl.value);
   inputEl.value = null;
