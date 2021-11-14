@@ -4,6 +4,7 @@ const inputBtn = document.querySelector('#save-input-btn');
 const ulEl = document.getElementById('ul-el');
 const deleteBtn = document.getElementById('delete-input-btn');
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem('savedLeads'));
+const tabBtn = document.getElementById('tab-btn');
 // console.log(leadsFromLocalStorage);
 
 //to show leads after refresh
@@ -11,6 +12,12 @@ if (leadsFromLocalStorage) {
   savedLeads = leadsFromLocalStorage;
   render(savedLeads);
 }
+
+const tabs = [{ url: 'https://www.linkedin.com/in/per-harald-borgen/' }];
+
+tabBtn.addEventListener('click', function () {
+  console.log(tabs[0].url);
+});
 
 function render(leads) {
   let listItems = '';

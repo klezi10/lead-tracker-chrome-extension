@@ -18,6 +18,11 @@ input {
   font-weight: bold;
 }
 
+#tab-btn {
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
 #delete-input-btn {
   background: white;
   border: 1px solid #0dcaf0;
